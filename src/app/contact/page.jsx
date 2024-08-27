@@ -24,8 +24,8 @@ export default function page() {
       >
         <div className="text-center">
           <h3>
-            <span>Contact</span> with me to sizzle <br /> your{" "}
-            <span>project.</span>
+          <span>  Collaborate</span> with Me to <span> Elevate </span>Your{" "}
+            <span> Project.</span>
           </h3>
           <p className="text-accent-foreground mt-5 w-3/4 mx-auto">
             Great designs, new generation ideas, user-centered projects.

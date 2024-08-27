@@ -5,6 +5,7 @@ import { DownloadIcon } from "lucide-react";
 import { Luckiest_Guy } from "next/font/google";
 import { transition, variants } from "@/utils/framer_variants";
 import { MotionDiv, MotionImage } from "@/utils/motionTags";
+import Link from "next/link";
 
 const luck = Luckiest_Guy({ subsets: ["latin"], weight: ["400"] });
 
@@ -35,7 +36,7 @@ export default function page() {
           >
             <div className="size-3 rounded-full bg-accent-foreground"></div>
           </MotionDiv>
-          <h4 className="text-2xl">Designer</h4>
+          <h4 className="text-2xl">Developer</h4>
         </MotionDiv>
         <MotionDiv
           initial="initial"
@@ -45,7 +46,7 @@ export default function page() {
           className={cn("md:text-right text-center", luck.className)}
         >
           <h1>
-            Carlos <br /> <span>Nicholas.</span>
+            Usama <br /> <span>Khan.</span>
           </h1>
         </MotionDiv>
         <br />
@@ -57,12 +58,13 @@ export default function page() {
           transition={transition.moveUp}
         >
           <DownloadIcon className="mr-2"></DownloadIcon>
-          Download CV
+          <a href="/USAMA-RESUME.pdf" download>Download CV</a>
+          
         </MotionButton>
 
         <div className="flex items-center gap-x-3 md:absolute bottom-6 left-2">
           {SOCIAL_ICONS.map((item, i) => {
-            return (
+            return ( <> <Link href={item.url} target="_blank">
               <MotionImage
                 whileHover={{ scale: 1.1 }}
                 initial="initial"
@@ -72,13 +74,17 @@ export default function page() {
                   ...transition.moveUp,
                   delay: 0.3 * i,
                 }}
+
                 key={item.id}
                 src={item.icon}
                 alt={item.name}
                 height={25}
                 width={25}
                 className="object-cover  cursor-pointer max-h-full"
+
               />
+              </Link>
+              </>
             );
           })}
         </div>
@@ -96,7 +102,7 @@ export default function page() {
             ...transition.moveLeft,
             delay: 1.5,
           }}
-          className="object-cover  max-h-full"
+          className="object-cover  max-h-full h-full"
         />
       </div>
     </div>

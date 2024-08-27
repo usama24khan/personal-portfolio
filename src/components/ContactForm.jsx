@@ -14,6 +14,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "./ui/use-toast";
+import { useState } from "react";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -27,7 +28,9 @@ const formSchema = z.object({
   }),
 });
 
+
 export function ContactForm() {
+  const [loading,setLoading]=useState(false)
   // ...
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -40,6 +43,7 @@ export function ContactForm() {
   const { toast } = useToast();
 
   function onSubmit(values) {
+    setLoading(true)
     fetch("/api/send", {
       method: "POST",
       body: JSON.stringify(values),
@@ -48,6 +52,7 @@ export function ContactForm() {
       },
     })
       .then(async (res) => {
+        setLoading(false)
         const data = await res.json();
         console.log(data);
         if (data?.id) {
@@ -108,6 +113,8 @@ export function ContactForm() {
         <Button variant="outline" type="submit" size="sm">
           Submit
         </Button>
+        <p className="text-lime-300">
+        {loading?"Loading...":""}</p>
       </form>
     </Form>
   );

@@ -13,28 +13,35 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { transition, variants } from "@/utils/framer_variants";
 import { MotionDiv } from "@/utils/motionTags";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "Doctor Site",
-    desc: "Project 1 description",
+    title: "Food Delivery App",
+    desc: "Seamless ordering, cart management, and intuitive filters for a delightful experience.",
     category: "frontend",
     image: "/pro1.png",
-    stack: ["React", "Redux", "Sass"],
+    stack: ["React", "ContexApi", "Css"],
+    gitHub:"https://github.com/usama24khan/tomato",
+    preview:"https://usama24khan.github.io/tomato/"
   },
   {
-    title: "Ecommerce",
-    desc: "Project 2 description",
-    category: "backend",
+    title: "Budget App",
+    desc: "Track your income and expenses with ease and precision.",
+    category: "frontend",
     image: "/pro2.png",
-    stack: ["express", "MongoDB"],
+    stack: ["HTML", "CSS","JavaScript"],
+    gitHub:"https://github.com/usama24khan/portfolio",
+    preview:"https://usama24khan.github.io/portfolio/budgetapp/index.html"
   },
   {
-    title: "Netfilx Clone",
-    desc: "Project 2 description",
-    category: "backend",
-    image: "/pro1.png",
-    stack: ["express", "MongoDB"],
+    title: "Quiz App",
+    desc: "Interactive quizzes with multiple formats and real-time score tracking.",
+    category: "frontend",
+    image: "/pro3.png",
+    stack: ["Html", "CSS","JavaScript"],
+    gitHub:"https://usama24khan.github.io/portfolio/Quiz%20App/index.html",
+    preview:"https://usama24khan.github.io/portfolio/Quiz%20App/index.html"
   },
 ];
 
@@ -64,7 +71,7 @@ export default function Projects() {
           transition={transition.moveUp}
           className="text-center mb-10 "
         >
-          <h3>
+          <h3 className="mt-2">
             {" "}
             My <span>Projects</span>
           </h3>
@@ -82,8 +89,7 @@ export default function Projects() {
             </h2>
             <h3>{currentProject?.title}</h3>
             <p className="w-10/12 text-accent-foreground">
-              Lorem ipsum dolor adipisicing sit amet, consectetur adipisicing
-              elit.
+              {currentProject.desc}
             </p>
             <div className="mt-2 text-primary font-semibold tracking-wider space-x-2">
               {currentProject?.stack?.map((item) => {
@@ -103,6 +109,7 @@ export default function Projects() {
               <TooltipProvider delayDuration={200}>
                 <Tooltip>
                   <TooltipTrigger asChild>
+                    <Link href={currentProject.gitHub}>
                     <button className="bg-accent p-2.5 rounded-full">
                       <Image
                         src="/Github.svg"
@@ -111,6 +118,7 @@ export default function Projects() {
                         height={40}
                       />
                     </button>
+                    </Link>
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Github</p>
@@ -120,14 +128,18 @@ export default function Projects() {
               <TooltipProvider delayDuration={200}>
                 <Tooltip>
                   <TooltipTrigger asChild>
+                  <Link href={currentProject.preview}>
                     <button className="bg-accent p-2.5 rounded-full">
+                      
                       <Image
                         src="/open.svg"
                         alt="github"
                         width={40}
                         height={40}
                       />
+                      
                     </button>
+                    </Link>
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Live Preview</p>
@@ -167,7 +179,7 @@ export default function Projects() {
                       alt={project.title}
                       width={350}
                       height={350}
-                      className="object-contain"
+                      className="object-contain rounded shadow-sm"
                     />
                   </SwiperSlide>
                 );

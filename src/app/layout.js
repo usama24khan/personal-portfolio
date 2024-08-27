@@ -11,7 +11,7 @@ import { Drawer } from "vaul";
 const anek = Anek_Latin({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Carlos Nicholas.",
+  title: "Usama Khan",
   description: "My Portfolio",
 };
 

@@ -17,11 +17,11 @@ export default function Footer() {
       {/* Main content of the footer */}
       <div className="flex sm:flex-row flex-col sm:items-center sm:gap-0 gap-5 py-5 justify-between container">
         {/* Logo of the website */}
-        <Image src={"/logo.png"} alt="logo" width={40} height={40} />
+        <Image src={"/logo.png"} alt="logo" width={55} height={55} />
         {/* Slogan of the website */}
         <h3 className="sm:text-2xl text-xl">
-          Discover a <span>gateway</span> to unparalleled <br />{" "}
-          <span>design</span> creativity.
+        <span> Organize</span> now,   <br />{" "}  save <span> valuable</span> time later 
+          
         </h3>
       </div>
       {/* Copyright information */}

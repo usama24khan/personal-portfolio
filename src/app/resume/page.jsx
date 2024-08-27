@@ -27,7 +27,7 @@ export default function Resume() {
               src="/profile.png"
               width={155}
               height={155}
-              className="md:w-36 w-28"
+              className="md:w-36 w-28 rounded-full"
               alt="avatar"
             ></MotionImage>
             <MotionDiv
@@ -38,9 +38,9 @@ export default function Resume() {
               className="sm:text-left text-center"
             >
               <h3 className="mb-2">
-                Carlos <span>Nicholas.</span>
+                Usama <span>Khan.</span>
               </h3>
-              <h5>California, US</h5>
+              <h5>Lahore, Pakistan</h5>
             </MotionDiv>
           </div>
           <MotionButton
@@ -51,7 +51,7 @@ export default function Resume() {
             variant="outline"
             size="lg"
           >
-            Senior UI/UX Designer
+            MERN DEVELOPER
           </MotionButton>
         </div>
         <MotionTabs
@@ -70,46 +70,22 @@ export default function Resume() {
           <TabsContent value="about">
             <h6>Who I&apos;m </h6>
             <p className="text-accent-foreground mt-2">
-              Jack Ashford is a dedicated UI/UX Designer known for his
-              unwavering commitment to creating captivating digital experiences.
-              With a blend of creativity and technical prowess, he navigates the
-              intersection of design and functionality, ensuring every detail
-              contributes to an intuitive user journey. With a diverse skill set
-              and a passion for innovation, Jack continuously pushes the
-              boundaries of design, seeking to redefine the way users interact
-              with technology.
+            Usama Khan, a passionate web developer with a Bachelor's degree in Computer Science(BSCS). I specialize in creating dynamic and responsive single-page applications using modern web technologies.Web Developer specializing in React, Next.js, Node.js, Express and MongoDB. Strong foundation in HTML, CSS, JavaScript, Tailwind CSS and Bootstrap
             </p>
             <p className="text-accent-foreground mt-2">
-              Jack Ashford is a dedicated UI/UX Designer known for his
-              unwavering commitment to creating captivating digital experiences.
-              With a blend of creativity and technical prowess, he navigates the
-              intersection of design and functionality.
+            Dedicated to writing clean, maintainable code and continuously learning new technologies to deliver cutting-edge web solutions
             </p>
           </TabsContent>
           <TabsContent value="skills">
             <h6>What I can do</h6>
             <p className="text-accent-foreground mt-2">
-              Jack Ashford is a dedicated UI/UX Designer known for his
-              unwavering commitment to creating captivating digital experiences.
-              With a blend of creativity and technical prowess, he navigates the
-              intersection of design and functionality, ensuring every detail
-              contributes to an intuitive user journey. With a diverse skill set
-              and a passion for innovation, Jack continuously pushes the
-              boundaries of design, seeking to redefine the way users interact
-              with technology.
+            Proficient in front-end development using HTML, CSS, JavaScript, Bootstrap, and Tailwind CSS to craft responsive, visually appealing interfaces. Skilled in building dynamic web applications with React.js and Next.js. Experienced in full-stack development, utilizing Node.js, Express.js, and MongoDB to create scalable, secure server-side solutions. Strong Git and GitHub collaboration skills.
             </p>
           </TabsContent>
           <TabsContent value="experience">
             <h6>My Work</h6>
             <p className="text-accent-foreground mt-2">
-              Jack Ashford is a dedicated UI/UX Designer known for his
-              unwavering commitment to creating captivating digital experiences.
-              With a blend of creativity and technical prowess, he navigates the
-              intersection of design and functionality, ensuring every detail
-              contributes to an intuitive user journey. With a diverse skill set
-              and a passion for innovation, Jack continuously pushes the
-              boundaries of design, seeking to redefine the way users interact
-              with technology.
+            In my work, I focus on creating attractive, responsive applications that are optimized for speed and performance. With experience across various projects, I've developed applications that not only look great but also load quickly, ensuring an excellent user experience. My attention to detail and commitment to quality drive my ability to deliver top-notch solutions.
             </p>
           </TabsContent>
         </MotionTabs>

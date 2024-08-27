@@ -27,7 +27,7 @@ export default function Menu() {
             variants={variants.scale}
             transition={transition.scale}
             src={"/logo.png"}
-            className="w-auto"
+            className="w-auto rounded shadow-xl"
             width={60}
             height={45}
             alt="logo"
@@ -59,6 +59,7 @@ export default function Menu() {
             );
           })}
         </ul>
+        <Link href={'/contact'}>
         <MotionButton
           initial="initial"
           animate="animate"
@@ -70,6 +71,7 @@ export default function Menu() {
           Get in Touch
         </MotionButton>{" "}
         <MobMenu pathname={pathname} />
+        </Link>
       </nav>
     </header>
   );

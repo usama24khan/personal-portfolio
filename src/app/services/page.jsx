@@ -19,8 +19,7 @@ export default function page() {
             Services <span>Offered</span>
           </h3>
           <p className="text-accent-foreground mt-5 sm:w-2/3 mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum
-            quae repellendus, sunt doloremque rem illo natus soluta voluptatibus
+          Comprehensive Full-Stack Web Solutions
           </p>
         </MotionDiv>
         <div className="flex flex-wrap justify-center gap-8 mt-11">
@@ -41,7 +40,7 @@ export default function page() {
                 width={55}
                 height={55}
                 alt="3d"
-                className="group-hover:scale-125 duration-200"
+                className="group-hover:scale-125 rounded-full duration-200"
               />
               <div className="translate-y-16 group-hover:translate-y-0 duration-500 ease-out">
                 <h3 className="mb-2">
