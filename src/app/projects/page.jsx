@@ -121,7 +121,7 @@ export default function Projects() {
                     <Link href={currentProject.gitHub}>
                     <button className="bg-accent p-2.5 rounded-full">
                       <Image
-                        src="/Github.png"
+                        src="/GitHub.png"
                         alt="github"
                         width={40}
                         height={40}
@@ -189,7 +189,7 @@ export default function Projects() {
                       alt={project.title}
                       width={350}
                       height={350}
-                      className="object-contain rounded shadow-lg shadow-black border border-white"
+                      className="object-contain rounded shadow-md shadow-slate-900 border-t border-l border-orange-400 "
                     />
                   </SwiperSlide>
                 );
