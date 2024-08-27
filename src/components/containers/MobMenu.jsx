@@ -57,8 +57,12 @@ export function MobMenu({ pathname }) {
 
           <DrawerFooter className={"pb-10"}>
             <Button variant="outline" className="md:hidden mx-auto">
+           <Link href="/contact">
+
               Get in Touch
+              </Link>
             </Button>
+          
           </DrawerFooter>
           <DrawerClose
             onClick={() => setIsOpen(false)}

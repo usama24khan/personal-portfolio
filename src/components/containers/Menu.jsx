@@ -27,7 +27,7 @@ export default function Menu() {
             variants={variants.scale}
             transition={transition.scale}
             src={"/logo.png"}
-            className="w-auto rounded shadow-xl"
+            className="w-auto rounded h-auto"
             width={60}
             height={45}
             alt="logo"
@@ -44,7 +44,7 @@ export default function Menu() {
                   ...transition.moveDown,
                   delay: 0.3 * i,
                 }}
-                key={item.id}
+                key={i}
               >
                 <Link
                   href={item.path}
@@ -70,8 +70,9 @@ export default function Menu() {
         >
           Get in Touch
         </MotionButton>{" "}
-        <MobMenu pathname={pathname} />
         </Link>
+        <MobMenu pathname={pathname} />
+        
       </nav>
     </header>
   );
