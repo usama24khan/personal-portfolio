@@ -27,7 +27,7 @@ export default function Menu() {
             variants={variants.scale}
             transition={transition.scale}
             src={"/logo.png"}
-            className="w-auto rounded h-auto"
+            className="w-auto rounded h-auto filter sepia"
             width={60}
             height={45}
             alt="logo"

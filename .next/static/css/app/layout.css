@@ -1009,11 +1009,11 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
-.border-t {
-  border-top-width: 1px;
-}
 .border-l {
   border-left-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-accent-foreground {
   border-color: hsl(var(--accent-foreground));
@@ -1024,16 +1024,12 @@ video {
 .border-destructive {
   border-color: hsl(var(--destructive));
 }
-.border-transparent {
-  border-color: transparent;
-}
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
 .border-orange-400 {
   --tw-border-opacity: 1;
   border-color: rgb(251 146 60 / var(--tw-border-opacity));
+}
+.border-transparent {
+  border-color: transparent;
 }
 .bg-accent {
   background-color: hsl(var(--accent));
@@ -1271,27 +1267,6 @@ video {
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.shadow-black {
-  --tw-shadow-color: #000;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-.shadow-slate-800 {
-  --tw-shadow-color: #1e293b;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-.shadow-gray-400 {
-  --tw-shadow-color: #9ca3af;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-.shadow-orange-400 {
-  --tw-shadow-color: #fb923c;
-  --tw-shadow: var(--tw-shadow-colored);
-}
 .shadow-slate-900 {
   --tw-shadow-color: #0f172a;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1302,8 +1277,16 @@ video {
 .ring-offset-background {
   --tw-ring-offset-color: hsl(var(--background));
 }
+.hue-rotate-90 {
+  --tw-hue-rotate: hue-rotate(90deg);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
 .invert {
   --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.sepia {
+  --tw-sepia: sepia(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .filter {

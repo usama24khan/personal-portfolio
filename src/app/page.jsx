@@ -36,7 +36,7 @@ export default function page() {
           >
             <div className="size-3 rounded-full bg-accent-foreground"></div>
           </MotionDiv>
-          <h4 className="text-2xl">Developer</h4>
+          <h4 className="text-2xl"> Developer</h4>
         </MotionDiv>
         <MotionDiv
           initial="initial"
