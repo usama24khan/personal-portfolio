@@ -1,32 +1,10 @@
+I originally developed my portfolio using HTML, CSS, and JavaScript. Recently, I've rebuilt it in Next.js, enhancing it with updated skills, showcasing new projects, and adding more advanced functionality
 
 
-## Getting Started
+This description highlights your progress and the improvements you've made to your portfolio.
 
-First, run the development server:
 
-You don't have pnpm i want install globaly:
 
-```bash
-npm i -g pnpm
-```
-
-```bash
-pnpm dev
-```
-
-Overall install:
-
-```bash
-pnpm i
-```
-
-install packages:
-
-```bash
-pnpm add <your-package-name>
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
 
