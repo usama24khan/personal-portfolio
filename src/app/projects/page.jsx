@@ -26,6 +26,15 @@ const projects = [
     preview:"https://usama24khan.github.io/tomato/"
   },
   {
+    title: "Personal Portfolio",
+    desc: "Showcase of my skills, projects, and professional accomplishments online.",
+    category: "frontend",
+    image: "/pro4.png",
+    stack: ["Next Js", "Tailwind","React"],
+    gitHub:"https://github.com/usama24khan/personal-portfolio",
+    preview:"https://personal-portfolio-eight-umber.vercel.app"
+  },
+  {
     title: "Budget App",
     desc: "Track your income and expenses with ease and precision.",
     category: "frontend",
@@ -112,10 +121,11 @@ export default function Projects() {
                     <Link href={currentProject.gitHub}>
                     <button className="bg-accent p-2.5 rounded-full">
                       <Image
-                        src="/Github.svg"
+                        src="/Github.png"
                         alt="github"
                         width={40}
                         height={40}
+                        className="filter invert"
                       />
                     </button>
                     </Link>
@@ -179,7 +189,7 @@ export default function Projects() {
                       alt={project.title}
                       width={350}
                       height={350}
-                      className="object-contain rounded shadow-sm"
+                      className="object-contain rounded shadow-lg shadow-black border border-white"
                     />
                   </SwiperSlide>
                 );
